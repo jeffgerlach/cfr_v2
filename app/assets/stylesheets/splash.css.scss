@@ -223,10 +223,12 @@ $dropDown       : true;
 #wod {
   h2 {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .for-wod{
     background: lighten(#000, 93.5%);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
