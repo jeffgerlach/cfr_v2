@@ -2,20 +2,26 @@
 // Variables, customize bootstrap here
 //-----------------------------------------
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 
 $red: #CD6363;
+$cfr-green: #62EA30;
+$cfr-blue: #002447;
+$cfr-blue-rgba: rgba(0, 36, 71, 1.0);
 $font-family-sans-serif: "Roboto";
 $headings-font-weight: 100;
 $font-size-base: 14px;
 $font-size-h2: floor(($font-size-base * 2.5));
 
-$navbar-height: 75px;
-$navbar-default-bg: rgba(255,255,255, 0.9);
-$navbar-default-link-active-bg: rgb(255,255,255);
-$navbar-default-toggle-border-color: rgb(255,255,255);
-$navbar-default-toggle-icon-bar-bg: #000;
-$navbar-default-toggle-hover-bg: rgb(255,255,255);
-$navbar-default-link-active-color: $red;
+$navbar-height: 100px;
+$navbar-inverse-bg: $cfr-blue-rgba;
+$navbar-inverse-link-color: $cfr-green;
+$navbar-inverse-link-active-bg: $cfr-blue-rgba;
+$navbar-inverse-toggle-border-color: rgb(255,255,255);
+$navbar-inverse-toggle-icon-bar-bg: rgba(255,255,255, 0.9);
+$navbar-inverse-toggle-hover-bg: $red;
+$navbar-inverse-link-hover-color: $red;
+$navbar-inverse-link-active-color: $red;
 
 $jumbotron-bg: rgb(255,255,255);
 $border-color: #CCC;
@@ -29,6 +35,10 @@ $form-submit-hover: rgba(0,0,0,0.1);
 $submit-button-color: rgb(0,0,0);
 $submit-border-color: rgb(0,0,0);
 $submit-button-background: transparent;
+
+$btn-primary-color: $cfr-green;
+$btn-primary-bg: $cfr-blue;
+
 // Color Palate
 
 @import 'bootstrap-sprockets';
@@ -39,14 +49,29 @@ body {
   position: relative;
 }
 
+/* Gradient transparent - color - transparent */
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#wod {
+  .for-wod{
+    background: lighten(#000, 93.5%);
+  }
+}
+
 .bottom-border {
   border-bottom: 1px solid $border-color;
 }
 
 .logo img{
-  width: 44px;
-  height: 54px;
-  margin: 10px;
+  width: 90px;
+  height: 70px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .hero {
@@ -104,3 +129,158 @@ form .btn {
   }
 }
 
+.clear {
+   clear: both;
+}
+
+footer {
+  height: 75px;
+  background-color: $cfr-blue;
+  padding-top: 20px;
+  .copyright{
+    color: $cfr-green;
+    }
+}
+
+$bgDefault      : #002447;
+$bgHighlight    : #002447;
+$colDefault     : #62ea30;
+$colHighlight   : #cd6363;
+$dropDown       : true;
+.navbar-inverse {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus { 
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li > a {
+            color: $colDefault;
+            &:hover,  &:focus {
+              color: $colHighlight;
+              background-color: $bgHighlight; }}
+          .divider {
+            background-color: $bgHighlight;}}}
+    }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
+
+/* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#schedule {
+  table, th, td {
+    text-align: center;
+  }
+}
+
+#location {
+
+}
+
+#contact {
+  h2 {
+    margin-bottom: 35px;
+  }
+  h4 {
+    color: $red;
+    padding: 5px;
+  }
+  .email-link {
+    font-size: 14pt;
+    color: $red;
+  }
+}
+
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+}
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}

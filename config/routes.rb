@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   post '/signup' => 'splash#signup', as: :splash_signup
   get '/splash' => 'splash#index'
   root 'splash#index'
+  # root 'setup#index'
   get '/setup' => 'setup#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

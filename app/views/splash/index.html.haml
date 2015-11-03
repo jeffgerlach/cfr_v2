@@ -1,29 +1,62 @@
 %section.masthead.jumbotron
   .container
-    .row.text-center.bottom-border
-      %h1 SPORK WRANGLER
-      %h4 Magic phone technology for texting witches and warlocks.
-      .col-sm-6.col-sm-offset-3
-        =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/phones.png", class: "hero img-responsive"
+    .row.text-center
+      %h1 Crossfit Rocky
+      %h4 Forging Elite Fitness
+      .col-sm-12
+        =image_tag "home-page-hero.jpg", class: "hero img-responsive"
+%hr
+%section#wod
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        %h2 WOD
+        .jumbotron.for-wod
+          %h3= Time.now.strftime "%A %B %d, %Y"
+          %hr
+          %h5 AMRAP15:
+          %h4 10 x Burpees
+          %h4 5 x Squat Clean
+          %h4 1 x Jerk
 
+%hr
 %section#about
   .container
     .row.text-center
       .col-sm-offset-1.col-sm-10
         .row
-          %h2 GLUTEN FREE
+          %h2 CONSTANTLY VARIED
           .col-sm-4.text-left
-            =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/pic1.jpg", class: "img-responsive"
-            %h4 SPROUTS
-            %p It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's broad canvas belt, and fast to my narrow leather one. So that for better or for worse, we two, for the time, were wedded; and should poor Queequeg sink to rise no more.
+            =image_tag "greg_oh.png", class: "img-responsive"
+            %h4 What is CrossFit?
+            %p CrossFit is the principal strength and conditioning program for many police academies and tactical operations teams, military special operations units, champion martial artists, and hundreds of other elite and professional athletes worldwide.
+            .text-center
+              = link_to "CFMAINSITE", "http://www.crossfit.com", :target => "_blank", class: "btn btn-primary btn-sm"
+            %br
           .col-sm-4.text-left
-            =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/pic2.jpg", class: "img-responsive"
-            %h4 COUNTER CULTURE
-            %p It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's broad canvas belt, and fast to my narrow leather one.
+            =image_tag "doug_tire_pull.jpg", class: "img-responsive"
+            %h4 Functional Fitness
+            %p At CFR, our goal is to deliver a broad, general, and inclusive fitness. Your results are observed and measured every workout with the objective of increased work capacity across broad time and modal domains. What does this mean? It means obtaining a fitness with measurable results while improving your ability to finish any physical task quicker and better than ever before.(Tested and proven!) 
           .col-sm-4.text-left
-            =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/pic3.jpg", class: "img-responsive"
-            %h4 BIKE SANDWICH
-            %p It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's broad canvas belt, and fast to my narrow leather one. So that for better or for worse, we two, for the time, were wedded; and should poor Queequeg sink to rise no more. Don't ya think? Kinda crazy if you ask me. But that's none of my business.
+            =image_tag "meagan.png", class: "img-responsive"
+            %h4 Be Ready For Life's Challenges
+            %p Training Constantly varied skills and drills from gymnastics, metabolic conditioning, and Olympic Weightlifting, you will obtain functional strength and an athletic skill set which will prepare you for any of life's physical challenges. 
+
+        .divider
+          .row.text-center
+            .col-sm-offset-1.col-sm-10
+              %hr
+             
+        .row
+          %h2 HIGH INTENSITY
+          .col-sm-6.text-left
+            =image_tag "brian_row.jpg", class: "img-responsive"
+            %h4 Fitness Domains
+            %p We now know that fitness is not just your ability to run for extended periods or lift a heavy weight, but a fine tuned balance of 10 overall fitness domains: Cardiovascular & respiratory endurance, stamina, strength, flexibility, power, speed, coordination, agility, balance, and accuracy. 
+          .col-sm-6.text-left
+            =image_tag "stan_front_rack.jpg", class: "img-responsive"
+            %h4 Unlocked Potential
+            %p We will train and challenge each of the ten fitness domains for an inclusive fitness that prepares each individual for both the known and unknowable that sport and life present. We view every person as an athlete and it is our goal for each individual to unlock their own athletic potential, and to achieve their highest capacity for work and best possible expression of human form.
 
 %section.divider
   .container
@@ -36,7 +69,7 @@
     .row.text-center
       .col-sm-offset-1.col-sm-10
         .row
-          %h2 HOW IT WORKS
+          %h2 FUNCTIONAL MOVEMENTS
           .col-sm-offset-1.col-sm-10.clearfix
             #carousel-example-generic.carousel.slide{ data: { ride: "carousel"} }
               %ol.carousel-indicators
@@ -46,60 +79,194 @@
 
               .carousel-inner{ role: "listbox" }
                 .item.active
-                  =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/venn.png"
+                  =image_tag "wallballs.jpg"
                 .item
-                  =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/venn.png"
+                  =image_tag "muscle_up_crop.jpg"
                 .item
-                  =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/venn.png"
+                  =image_tag "dustin_medals_crop.jpg"
 
 %section.divider
   .container
     .row.text-center
-      .col-sm-offset-3.col-sm-6
+      .col-sm-offset-1.col-sm-10
         %hr
 
-%section#team
+%section#coaches
   .container
     .row.text-center
       .col-sm-offset-1.col-sm-10
         .row
-          %h2 THE TEAM
+          %h2 COACHES
           .col-sm-offset-1.col-sm-10
             .row
               .col-md-6.text-left.clearfix
-                =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/avatar1.png", class: "avatar pull-left"
-                %h4 Captain Wiggles
-                %p Entrepreneur, self described genius, too many resources not enough ideas.
+                =image_tag "john_overhead_avatar.png", class: "avatar pull-left"
+                %h4 John Giron
+                %p Gym owner
+                %p CrossFit Level I Trainer (CF-L1)
               .col-md-6.text-left.clearfix
-                =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/avatar2.png", class: "avatar pull-left"
-                %h4 Panda Eyepatch
-                %p Marketing. What’s it gonna take to get you into spork wrangler today? I mean today.
+                =image_tag "jeff_fs_avatar.png", class: "avatar pull-left"
+                %h4 Jeff Gerlach
+                %p CrossFit Level I Trainer (CF-L1)
               .col-md-6.text-left.clearfix
-                =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/avatar3.png", class: "avatar pull-left"
-                %h4 Apple Shirt
-                %p Partnerships and product manufacturing. Engineering degree based on forks.
+                =image_tag "meagan_ohs_avatar.png", class: "avatar pull-left"
+                %h4 Meagan Crews
+                %p CrossFit Level I Trainer (CF-L1)
               .col-md-6.text-left
-                =image_tag "https://s3.amazonaws.com/assets.happyfuncorp.com/splash-assets/avatar4.png", class: "avatar pull-left"
-                %h4 Pixel Face
-                %p Developer, shut in, grumpy but lovable. Technical backbone and anime lover.
+                =image_tag "gerald_avatar.jpg", class: "avatar pull-left"
+                %h4 Gerald Braden
+                %p CrossFit Level I Trainer (CF-L1)
 
 %section.divider
   .container
     .row.text-center
-      .col-sm-offset-3.col-sm-6
+      .col-sm-offset-1.col-sm-10
         %hr
 
-            
-%section#contact
+
+%section#schedule
   .container
-    .row
+    .row 
       .col-sm-8.col-sm-offset-2
         .row.text-center
           .col-sm-10.col-sm-offset-1
-            %h1 Stay connected for announcements and releases.
-            = form_tag splash_signup_path, role: :form, :class=>'form-inline', :remote=>true do
-              .form-group#signup
-                = text_field_tag :signup_email, '',  :class=>'form-control', :placeholder=>'E-mail'
-                %span.btn
-                  = submit_tag 'Sign up', :class=>'btn btn-primary'
-                %small#signup-message
+          %h2 CLASS TIMES
+          .table-responsive
+            %table.table
+              %tr
+                %th
+                %th Morning
+                %th Evening
+              %tr
+                %td{:rowspan=>"2"} 
+                  %b Monday
+                %td{:rowspan=>"2"} 
+                  %p 5:00 AM
+                %td{:rowspan=>"2"} 
+                  %p 5:30 PM
+                  %p 6:30 PM
+              %tr
+              %tr
+                %td{:rowspan=>"2"} 
+                  %b Tuesday
+                %td{:rowspan=>"2"} 
+                  %p 5:00 AM
+                  %p 6:00 AM
+                %td{:rowspan=>"2"} 
+                  %p 5:30 PM
+                  %p 6:30 PM
+              %tr
+              %tr
+                %td{:rowspan=>"2"} 
+                  %b Wednesday
+                %td{:rowspan=>"2"} 
+                  %p 5:00 AM
+                %td{:rowspan=>"2"} 
+                  %p 5:30 PM
+                  %p 6:30 PM
+              %tr
+              %tr
+                %td{:rowspan=>"2"} 
+                  %b Thursday
+                %td{:rowspan=>"2"} 
+                  %p 5:00 AM
+                  %p 6:00 AM
+                %td{:rowspan=>"2"} 
+                  %p 5:30 PM
+                  %p 6:30 PM
+              %tr
+              %tr
+                %td{:rowspan=>"2"} 
+                  %b Friday
+                %td{:rowspan=>"2"} 
+                  %p 5:00 AM
+                %td{:rowspan=>"2"} 
+                  %p 5:30 PM
+          %hr
+
+%section#pricing
+  .container
+    .row.text-center
+      %h2 PRICING
+      .col-md-4.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Punch Card
+          .panel-body.text-center
+            %p
+              %strong $100/card
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check Good for 10 Classes
+            %li.list-group-item
+              %i.fa.fa-check Military/Student Discount Available
+            %li.list-group-item
+              %i.fa.fa-check Family Plan Available
+            %li.list-group-item
+              %i.fa.fa-check No Expiration
+          .panel-footer
+            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
+      .col-md-4.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Monthly Membership
+          .panel-body.text-center
+            %p
+              %strong $120/month
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check 2 Month Commitment
+            %li.list-group-item
+              %i.fa.fa-check Military/Student Discount Available
+            %li.list-group-item
+              %i.fa.fa-check Family Plan Available
+            %li.list-group-item
+              %i.fa.fa-check Auto-pay Available
+          .panel-footer
+            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
+      .col-md-4.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Yearly Membership
+          .panel-body.text-center
+            %p
+              %strong $1000/year
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check 20% savings!
+            %li.list-group-item
+              %i.fa.fa-check Military/Student Discount Available
+            %li.list-group-item
+              %i.fa.fa-check Family Plan Available
+            %li.list-group-item
+              %i.fa.fa-check Best Value!
+          .panel-footer
+            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
+
+%section#location
+  .container
+    .row 
+      .col-sm-8.col-sm-offset-2
+        .row.text-center
+          .col-sm-10.col-sm-offset-1
+          %h2 LOCATION
+          .Flexible-container
+            %iframe{:width => "425", :height=>"350", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH5woqv82E4cRZ7Rwh4-vP3c&key=AIzaSyAr-nhsQUVlriaJNEBFa7Jt3VA_3WYpk44"}
+          %hr
+
+%section#contact
+  .container
+    .row 
+      .col-sm-8.col-sm-offset-2
+        .row.text-center
+          .col-sm-10.col-sm-offset-1
+          %h2 CONTACT US
+          %h4 (805) 748-8480
+          = mail_to "cfr@crossfitrocky.com", nil, :class => "email-link"
+          %hr
+          %h3 FIND US ON FACEBOOK
+          = link_to "http://www.facebook.com/crossfitrocky", :target => "_blank" do
+            =image_tag "facebook.png"
