@@ -41,9 +41,6 @@
             =image_tag "greg_oh.png", class: "img-responsive"
             %h4 What is CrossFit?
             %p CrossFit is the principal strength and conditioning program for many police academies and tactical operations teams, military special operations units, champion martial artists, and hundreds of other elite and professional athletes worldwide.
-            .text-center
-              = link_to "CFMAINSITE", "http://www.crossfit.com", :target => "_blank", class: "btn btn-primary btn-sm"
-            %br
           .col-sm-4.text-left
             =image_tag "doug_tire_pull.jpg", class: "img-responsive"
             %h4 Functional Fitness
@@ -52,6 +49,8 @@
             =image_tag "meagan.png", class: "img-responsive"
             %h4 Be Ready For Life's Challenges
             %p Training Constantly varied skills and drills from gymnastics, metabolic conditioning, and Olympic Weightlifting, you will obtain functional strength and an athletic skill set which will prepare you for any of life's physical challenges. 
+        .row.text-center.main-site-link
+          = link_to "CFMAINSITE", "http://www.crossfit.com", :target => "_blank", class: "btn btn-success btn-md"
 
         .divider
           .row.text-center
@@ -59,7 +58,7 @@
               %hr
              
         .row
-          %h2 HIGH INTENSITY
+          %h2.extra-top-margin HIGH INTENSITY
           .col-sm-6.text-left
             =image_tag "brian_row.jpg", class: "img-responsive"
             %h4 Fitness Domains
@@ -103,36 +102,34 @@
         %hr
 
 %section#coaches
-  .container
+  .container.text-center
+    %h2 COACHES
     .row.text-center
-      .col-sm-offset-1.col-sm-10
+      .col-sm-offset-3.col-sm-8
         .row
-          %h2 COACHES
-          .col-sm-offset-1.col-sm-10
-            .row
-              .col-md-6.text-left.clearfix
-                =image_tag "john_overhead_avatar.png", class: "avatar pull-left"
-                %h4 John Giron
-                %p Gym owner
-                %p CrossFit Level I Trainer (CF-L1)
-              .col-md-6.text-left.clearfix
-                =image_tag "christina_kb_avatar.png", class: "avatar pull-left"
-                %h4 Christina Giron
-                %p Gym owner
-                %p CrossFit Level I Trainer (CF-L1)
-              .col-md-6.text-left.clearfix
-                =image_tag "meagan_ohs_avatar.png", class: "avatar pull-left"
-                %h4 Meagan Crews
-                %p CrossFit Level I Trainer (CF-L1)
-              .col-md-6.text-left.clearfix
-                =image_tag "gerald_avatar.jpg", class: "avatar pull-left"
-                %h4 Gerald Braden
-                %p CrossFit Level I Trainer (CF-L1)
-            .row
-              .col-md-6.text-left.clearfix
-                =image_tag "jeff_fs_avatar.png", class: "avatar pull-left"
-                %h4 Jeff Gerlach
-                %p CrossFit Level I Trainer (CF-L1)
+          .col-md-6.text-left.clearfix
+            =image_tag "john_overhead_avatar.png", class: "avatar pull-left"
+            %h4 John Giron
+            %p Gym owner
+            %p CrossFit Level I Trainer (CF-L1)
+          .col-md-6.text-left.clearfix
+            =image_tag "christina_kb_avatar.png", class: "avatar pull-left"
+            %h4 Christina Giron
+            %p Gym owner
+            %p CrossFit Level I Trainer (CF-L1)
+          .col-md-6.text-left.clearfix
+            =image_tag "meagan_ohs_avatar.png", class: "avatar pull-left"
+            %h4 Meagan Crews
+            %p CrossFit Level I Trainer (CF-L1)
+          .col-md-6.text-left.clearfix
+            =image_tag "gerald_avatar.jpg", class: "avatar pull-left"
+            %h4 Gerald Braden
+            %p CrossFit Level I Trainer (CF-L1)
+        .row
+          .col-md-6.text-left.clearfix
+            =image_tag "jeff_fs_avatar.png", class: "avatar pull-left"
+            %h4 Jeff Gerlach
+            %p CrossFit Level I Trainer (CF-L1)
 
 %section.divider
   .container
@@ -142,64 +139,69 @@
 
 
 %section#schedule
-  .container
+  .container.text-center
+    %h2 CLASS TIMES
     .row 
       .col-sm-8.col-sm-offset-2
         .row.text-center
           .col-sm-10.col-sm-offset-1
-          %h2 CLASS TIMES
-          .table-responsive
-            %table.table
-              %tr
-                %th
-                %th Morning
-                %th Evening
-              %tr
-                %td{:rowspan=>"2"} 
-                  %b Monday
-                %td{:rowspan=>"2"} 
-                  %p 5:00 AM
-                %td{:rowspan=>"2"} 
-                  %p 5:30 PM
-                  %p 6:30 PM
-              %tr
-              %tr
-                %td{:rowspan=>"2"} 
-                  %b Tuesday
-                %td{:rowspan=>"2"} 
-                  %p 5:00 AM
-                  %p 6:00 AM
-                %td{:rowspan=>"2"} 
-                  %p 5:30 PM
-                  %p 6:30 PM
-              %tr
-              %tr
-                %td{:rowspan=>"2"} 
-                  %b Wednesday
-                %td{:rowspan=>"2"} 
-                  %p 5:00 AM
-                %td{:rowspan=>"2"} 
-                  %p 5:30 PM
-                  %p 6:30 PM
-              %tr
-              %tr
-                %td{:rowspan=>"2"} 
-                  %b Thursday
-                %td{:rowspan=>"2"} 
-                  %p 5:00 AM
-                  %p 6:00 AM
-                %td{:rowspan=>"2"} 
-                  %p 5:30 PM
-                  %p 6:30 PM
-              %tr
-              %tr
-                %td{:rowspan=>"2"} 
-                  %b Friday
-                %td{:rowspan=>"2"} 
-                  %p 5:00 AM
-                %td{:rowspan=>"2"} 
-                  %p 5:30 PM
-          %hr
+            .table-responsive
+              %table.table
+                %tr
+                  %th
+                  %th Morning
+                  %th Evening
+                %tr
+                  %td{:rowspan=>"2"} 
+                    %b Monday
+                  %td{:rowspan=>"2"} 
+                    %p 5:00 AM
+                  %td{:rowspan=>"2"} 
+                    %p 5:30 PM
+                    %p 6:30 PM
+                %tr
+                %tr
+                  %td{:rowspan=>"2"} 
+                    %b Tuesday
+                  %td{:rowspan=>"2"} 
+                    %p 5:00 AM
+                    %p 6:00 AM
+                  %td{:rowspan=>"2"} 
+                    %p 5:30 PM
+                    %p 6:30 PM
+                %tr
+                %tr
+                  %td{:rowspan=>"2"} 
+                    %b Wednesday
+                  %td{:rowspan=>"2"} 
+                    %p 5:00 AM
+                  %td{:rowspan=>"2"} 
+                    %p 5:30 PM
+                    %p 6:30 PM
+                %tr
+                %tr
+                  %td{:rowspan=>"2"} 
+                    %b Thursday
+                  %td{:rowspan=>"2"} 
+                    %p 5:00 AM
+                    %p 6:00 AM
+                  %td{:rowspan=>"2"} 
+                    %p 5:30 PM
+                    %p 6:30 PM
+                %tr
+                %tr
+                  %td{:rowspan=>"2"} 
+                    %b Friday
+                  %td{:rowspan=>"2"} 
+                    %p 5:00 AM
+                  %td{:rowspan=>"2"} 
+                    %p 5:30 PM
+
+%section.divider
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        %hr
 
 %section#pricing
   .container.text-center
@@ -276,7 +278,7 @@
           .panel-body.text-center
             %p
               %ul 2 Members Regular Price
-              %ul + $59/month Per Additional 
+              %ul + $59/month per Additional 
           %ul.list-group.text-center
             %li.list-group-item
               %i.fa.fa-check Auto-Pay Available 
@@ -311,15 +313,12 @@
         %hr
 
 %section#location
-  .container
+  .container.text-center
+    %h2 LOCATION
     .row 
-      .col-sm-8.col-sm-offset-2
-        .row.text-center
-          .col-sm-10.col-sm-offset-1
-          %h2 LOCATION
-          .Flexible-container
-            %iframe{:width => "425", :height=>"350", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH5woqv82E4cRZ7Rwh4-vP3c&key=AIzaSyAr-nhsQUVlriaJNEBFa7Jt3VA_3WYpk44"}
-          %br
+      .col-sm-10.col-sm-offset-1
+        .Flexible-container
+          %iframe{:width => "425", :height=>"350", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH5woqv82E4cRZ7Rwh4-vP3c&key=AIzaSyAr-nhsQUVlriaJNEBFa7Jt3VA_3WYpk44"}
 
 %section.divider
   .container
@@ -328,14 +327,15 @@
         %hr
 
 %section#contact
-  .container
+  .container.text-center
+    %h2 CONTACT US
     .row 
       .col-sm-8.col-sm-offset-2
         .row.text-center
           .col-sm-10.col-sm-offset-1
-          %h2 CONTACT US
           %h4 (805) 748-8480
           = mail_to "cfr@crossfitrocky.com", nil, :class => "email-link"
+
 %section.divider
   .container
     .row.text-center
@@ -343,11 +343,11 @@
         %hr
 
 %section#facebook
-  .container
+  .container.text-center
+    %h3 FIND US ON FACEBOOK
     .row 
       .col-sm-8.col-sm-offset-2
         .row.text-center
           .col-sm-10.col-sm-offset-1       
-          %h3 FIND US ON FACEBOOK
           = link_to "http://www.facebook.com/crossfitrocky", :target => "_blank" do
             =image_tag "facebook.png"
