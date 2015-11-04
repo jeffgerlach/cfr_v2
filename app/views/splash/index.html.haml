@@ -13,10 +13,10 @@
         %hr
 
 %section#wod
-  .container
+  .container.text-center
+    %h2 WOD
     .row.text-center
       .col-sm-offset-2.col-sm-8
-        %h2 WOD
         .jumbotron.for-wod
           %h3= Time.now.strftime "%A %B %d, %Y"
           %hr
@@ -75,25 +75,23 @@
         %hr
  
 %section
-  .container
-    .row.text-center
+  .container.text-center
+    %h2 FUNCTIONAL MOVEMENTS
+    .row
       .col-sm-offset-1.col-sm-10
-        .row
-          %h2 FUNCTIONAL MOVEMENTS
-          .col-sm-offset-1.col-sm-10.clearfix
-            #carousel-example-generic.carousel.slide{ data: { ride: "carousel"} }
-              %ol.carousel-indicators
-                %li.active{ data: {target: "#carousel-example-generic", "slide-to" => "0" }}
-                %li{ data: {target: "#carousel-example-generic", "slide-to" => "1" }}
-                %li{ data: {target: "#carousel-example-generic", "slide-to" => "2" }}
+        #carousel-example-generic.carousel.slide{ data: { ride: "carousel"} }
+          %ol.carousel-indicators
+            %li.active{ data: {target: "#carousel-example-generic", "slide-to" => "0" }}
+            %li{ data: {target: "#carousel-example-generic", "slide-to" => "1" }}
+            %li{ data: {target: "#carousel-example-generic", "slide-to" => "2" }}
 
-              .carousel-inner{ role: "listbox" }
-                .item.active
-                  =image_tag "wallballs.jpg"
-                .item
-                  =image_tag "muscle_up_crop.jpg"
-                .item
-                  =image_tag "dustin_medals_crop.jpg"
+          .carousel-inner{ role: "listbox" }
+            .item.active
+              =image_tag "wallballs.jpg", class: "img-responsive"
+            .item
+              =image_tag "muscle_up_crop.jpg", class: "img-responsive"
+            .item
+              =image_tag "dustin_medals_crop.jpg", class: "img-responsive"
 
 %section.divider
   .container

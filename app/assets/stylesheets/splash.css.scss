@@ -121,6 +121,10 @@ section {
   }
 }
 
+.carousel-inner .img-responsive {
+  margin: 0 auto;
+}
+
 form .btn {
   background: $submit-button-background;
   color: $submit-button-color;
