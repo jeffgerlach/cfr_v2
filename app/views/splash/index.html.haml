@@ -1,7 +1,7 @@
 %section.masthead.jumbotron
   .container
     .row.text-center
-      %h1 Crossfit Rocky
+      %h1 CrossFit Rocky
       %h4 Forging Elite Fitness
       .col-sm-12
         =image_tag "home-page-hero.jpg", class: "hero img-responsive"
@@ -9,7 +9,7 @@
 %section#wod
   .container
     .row.text-center
-      .col-sm-offset-1.col-sm-10
+      .col-sm-offset-2.col-sm-8
         %h2 WOD
         .jumbotron.for-wod
           %h3= Time.now.strftime "%A %B %d, %Y"
@@ -191,21 +191,10 @@
           %hr
 
 %section#pricing
-  .container
+  .container.text-center
+    %h2 PRICING
     .row.text-center
-      %h2 PRICING
-      .col-md-3.text-center
-        .panel.panel-success.panel-pricing
-          .panel-heading
-            %i.fa
-            %h3 Drop-In
-          .panel-body.text-center
-            %p
-              %strong $15
-          %ul.list-group.text-center
-            %li.list-group-item
-              %i.fa.fa-check Cash or Check
-      .col-md-3.text-center
+      .col-md-4.text-center
         .panel.panel-success.panel-pricing
           .panel-heading
             %i.fa
@@ -217,12 +206,12 @@
             %li.list-group-item
               %i.fa.fa-check Good for 10 Classes
             %li.list-group-item
-              %i.fa.fa-check Military/Law/Fire/Student Discount Available
+              %i.fa.fa-check Military/Law/Fire/Student 10% Discount Available
             %li.list-group-item
               %i.fa.fa-check No Expiration
           .panel-footer
-            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
-      .col-md-3.text-center
+            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} PAY NOW!
+      .col-md-4.text-center
         .panel.panel-success.panel-pricing
           .panel-heading
             %i.fa
@@ -232,14 +221,14 @@
               %strong $120/month
           %ul.list-group.text-center
             %li.list-group-item
-              %i.fa.fa-check Auto-pay Available 
+              %i.fa.fa-check Auto-Pay Available 
             %li.list-group-item
-              %i.fa.fa-check Military/Law/Fire/Student Discount Available
+              %i.fa.fa-check Military/Law/Fire/Student 10% Discount Available
             %li.list-group-item
               %i.fa.fa-check 30 Day Cancellation Notice Required
           .panel-footer
             %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
-      .col-md-3.text-center
+      .col-md-4.text-center
         .panel.panel-success.panel-pricing
           .panel-heading
             %i.fa
@@ -249,15 +238,66 @@
               %strong $110/month
           %ul.list-group.text-center
             %li.list-group-item
-              %i.fa.fa-check ~10% savings!
+              %i.fa.fa-check ~10% Savings, Best Value!
             %li.list-group-item
-              %i.fa.fa-check Military/Student/Family Discount Available
+              %i.fa.fa-check Military/Law/Fire/Student 10% Discount Available
             %li.list-group-item
-              %i.fa.fa-check Best Value!
-            %li.list-group-item
-              %i.fa.fa-check Year-Long Commitment Required
+              %i.fa.fa-check Auto-Pay Required, Year-Long Commitment Required
           .panel-footer
             %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
+    .row.text-center
+      .col-md-4.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Drop-In
+          .panel-body.text-center
+            %p
+              %strong $15
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check Cash or Check
+      .col-md-4.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Family Membership
+          .panel-body.text-center
+            %p
+              %ul 2 Members Regular Price
+              %ul + $59/month Per Additional 
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check Auto-Pay Available 
+            %li.list-group-item
+              %i.fa.fa-check Military/Law/Fire/Student 10% Discount Available
+            %li.list-group-item
+              %i.fa.fa-check Available For Monthly and Yearly Memberships
+          .panel-footer
+            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
+      .col-md-4.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Foundations Class
+          .panel-body.text-center
+            %p
+              %strong $100
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check Required For New CrossFit Athletes
+            %li.list-group-item
+              %i.fa.fa-check One Time Fee 
+            %li.list-group-item
+              %i.fa.fa-check Not Required If You Have Previous CrossFit Experience
+          .panel-footer
+            %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} PAY NOW!
+
+%section.divider
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        %hr
 
 %section#location
   .container
@@ -268,7 +308,13 @@
           %h2 LOCATION
           .Flexible-container
             %iframe{:width => "425", :height=>"350", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH5woqv82E4cRZ7Rwh4-vP3c&key=AIzaSyAr-nhsQUVlriaJNEBFa7Jt3VA_3WYpk44"}
-          %hr
+          %br
+
+%section.divider
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        %hr
 
 %section#contact
   .container
@@ -279,7 +325,18 @@
           %h2 CONTACT US
           %h4 (805) 748-8480
           = mail_to "cfr@crossfitrocky.com", nil, :class => "email-link"
-          %hr
+%section.divider
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        %hr
+
+%section#facebook
+  .container
+    .row 
+      .col-sm-8.col-sm-offset-2
+        .row.text-center
+          .col-sm-10.col-sm-offset-1       
           %h3 FIND US ON FACEBOOK
           = link_to "http://www.facebook.com/crossfitrocky", :target => "_blank" do
             =image_tag "facebook.png"

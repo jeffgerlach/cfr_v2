@@ -289,4 +289,16 @@ $dropDown       : true;
   color: #777777;
   padding: 20px;
   margin: 0px;
+  ul {
+    padding: 0px;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: -5px;
+  }
+}
+
+#pricing {
+  .row {
+    margin-bottom: 30px;
+  }
 }
