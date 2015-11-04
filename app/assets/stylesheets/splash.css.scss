@@ -332,5 +332,15 @@ $dropDown       : true;
 .material-icons.md-dark { 
   color: rgba(98, 234, 48, 0.54);
   line-height: 60px;
-  margin-right: 100px;
+  margin-right: 60px;
+  @media (min-width: 375px) {
+    margin-right: 75px;
+  }
+}
+
+.burger-button {
+  margin-left: -35px;
+  @media (min-width: 375px) {
+    margin-left: -40px;
+  }
 }

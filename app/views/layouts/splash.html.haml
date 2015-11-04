@@ -29,16 +29,16 @@
             = link_to root_path, :class=>'logo' do
               =image_tag 'cfr-logo.jpeg', alt: "CrossFit Rocky", class: "img-responsive logo img-rounded"
           .navbar-header.pull-right.visible-xs
-            %ul.nav.navbar-nav.pull-left.active
+            %ul.nav.navbar-nav.pull-left.active.my-nav-icon
               = link_to "tel:805-748-8480" do
                 %li.active.material-icons.md-dark phone
-            %ul.nav.navbar-nav.pull-left.active
+            %ul.nav.navbar-nav.pull-left.active.my-nav-icon
               = mail_to "cfr@crossfitrocky.com", nil, :class => "email-link" do
                 %li.active.material-icons.md-dark email
-            %ul.nav.navbar-nav.pull-left.active
+            %ul.nav.navbar-nav.pull-left.active.my-nav-icon
               = link_to "geo:38.9367481,-104.679622" do
                 %li.active.material-icons.md-dark pin_drop
-            %button.visible-xs.navbar-toggle{"type"=>"button", 'data-toggle'=>"collapse", 'data-target'=>'#navbar-collapse-1'}
+            %button.visible-xs.navbar-toggle.collapsed.burger-button{"type"=>"button", 'data-toggle'=>"collapse", 'data-target'=>'#navbar-collapse-1'}
               %span.sr-only Toggle navigation
               %span.icon-bar
               %span.icon-bar
