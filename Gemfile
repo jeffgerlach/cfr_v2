@@ -96,3 +96,4 @@ gem 'activeadmin', github: 'activeadmin', branch: 'master'
 gem 'inherited_resources'
 gem 'dateslices'
 gem 'jazz_hands', github: 'danrabinowitz/jazz_hands', branch: 'use-newer-version-of-pry', groups: [:development, :test]
+#gem 'browser'
