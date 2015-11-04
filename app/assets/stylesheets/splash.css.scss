@@ -70,6 +70,7 @@ hr {
 
 .hero {
   margin-top: 50px;
+  margin-bottom: -55px;
 }
 
 h4 {
@@ -222,8 +223,8 @@ $dropDown       : true;
 
 #wod {
   h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
   }
   .for-wod{
     background: lighten(#000, 93.5%);
