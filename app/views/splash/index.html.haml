@@ -194,26 +194,35 @@
   .container
     .row.text-center
       %h2 PRICING
-      .col-md-4.text-center
+      .col-md-3.text-center
+        .panel.panel-success.panel-pricing
+          .panel-heading
+            %i.fa
+            %h3 Drop-In
+          .panel-body.text-center
+            %p
+              %strong $15
+          %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check Cash or Check
+      .col-md-3.text-center
         .panel.panel-success.panel-pricing
           .panel-heading
             %i.fa
             %h3 Punch Card
           .panel-body.text-center
             %p
-              %strong $100/card
+              %strong $100
           %ul.list-group.text-center
             %li.list-group-item
               %i.fa.fa-check Good for 10 Classes
             %li.list-group-item
-              %i.fa.fa-check Military/Student Discount Available
-            %li.list-group-item
-              %i.fa.fa-check Family Plan Available
+              %i.fa.fa-check Military/Law/Fire/Student Discount Available
             %li.list-group-item
               %i.fa.fa-check No Expiration
           .panel-footer
             %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
-      .col-md-4.text-center
+      .col-md-3.text-center
         .panel.panel-success.panel-pricing
           .panel-heading
             %i.fa
@@ -223,32 +232,30 @@
               %strong $120/month
           %ul.list-group.text-center
             %li.list-group-item
-              %i.fa.fa-check 2 Month Commitment
+              %i.fa.fa-check Auto-pay Available 
             %li.list-group-item
-              %i.fa.fa-check Military/Student Discount Available
+              %i.fa.fa-check Military/Law/Fire/Student Discount Available
             %li.list-group-item
-              %i.fa.fa-check Family Plan Available
-            %li.list-group-item
-              %i.fa.fa-check Auto-pay Available
+              %i.fa.fa-check 30 Day Cancellation Notice Required
           .panel-footer
             %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
-      .col-md-4.text-center
+      .col-md-3.text-center
         .panel.panel-success.panel-pricing
           .panel-heading
             %i.fa
             %h3 Yearly Membership
           .panel-body.text-center
             %p
-              %strong $1000/year
+              %strong $110/month
           %ul.list-group.text-center
             %li.list-group-item
-              %i.fa.fa-check 20% savings!
+              %i.fa.fa-check ~10% savings!
             %li.list-group-item
-              %i.fa.fa-check Military/Student Discount Available
-            %li.list-group-item
-              %i.fa.fa-check Family Plan Available
+              %i.fa.fa-check Military/Student/Family Discount Available
             %li.list-group-item
               %i.fa.fa-check Best Value!
+            %li.list-group-item
+              %i.fa.fa-check Year-Long Commitment Required
           .panel-footer
             %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
 
