@@ -150,6 +150,19 @@ footer {
     }
 }
 
+/* Prevent navbar text wraparound while resizing screen */
+@media (max-width: 793px) {
+  .navbar-inverse{
+    .navbar-nav {
+      > li {
+        > a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
 $bgDefault      : #002447;
 $bgHighlight    : #002447;
 $colDefault     : #62ea30;
@@ -314,4 +327,10 @@ $dropDown       : true;
   .row {
     margin-bottom: 30px;
   }
+}
+
+.material-icons.md-dark { 
+  color: rgba(98, 234, 48, 0.54);
+  line-height: 60px;
+  margin-right: 100px;
 }

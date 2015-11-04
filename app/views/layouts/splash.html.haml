@@ -16,6 +16,7 @@
     = javascript_include_tag 'modernizr'
 
     = csrf_meta_tag
+    %link{:href=>"https://fonts.googleapis.com/icon?family=Material+Icons", :rel=>"stylesheet"}
 
   %body{ "data-spy" => "scroll", "data-target" => "#about"}
     = render 'chromeframe'
@@ -24,13 +25,33 @@
     %nav.navbar.navbar-inverse.navbar-fixed-top{"role"=>"navigation"}
       .container-fluid
         .navbar-header
-          %button.navbar-toggle{"type"=>"button", 'data-toggle'=>"collapse", 'data-target'=>'#navbar-collapse-1'}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          = link_to '#', :class=>'logo' do
-            =image_tag 'cfr-logo.jpeg', alt: "CrossFit Rocky", class: "img-responsive logo img-rounded"
+          .navbar-header.pull-left.visible-xs
+            = link_to root_path, :class=>'logo' do
+              =image_tag 'cfr-logo.jpeg', alt: "CrossFit Rocky", class: "img-responsive logo img-rounded"
+          .navbar-header.pull-right.visible-xs
+            %ul.nav.navbar-nav.pull-left.active
+              = link_to "tel:805-748-8480" do
+                %li.active.material-icons.md-dark phone
+            %ul.nav.navbar-nav.pull-left.active
+              = mail_to "cfr@crossfitrocky.com", nil, :class => "email-link" do
+                %li.active.material-icons.md-dark email
+            %ul.nav.navbar-nav.pull-left.active
+              = link_to "geo:38.9367481,-104.679622" do
+                %li.active.material-icons.md-dark pin_drop
+            %button.visible-xs.navbar-toggle{"type"=>"button", 'data-toggle'=>"collapse", 'data-target'=>'#navbar-collapse-1'}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+          .navbar-header.hidden-xs
+            %button.navbar-toggle.collapsed{"type"=>"button", 'data-toggle'=>"collapse", 'data-target'=>'#navbar-collapse-1'}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            .navbar-header.hidden-xs
+              = link_to root_path, :class=>'logo' do
+                =image_tag 'cfr-logo.jpeg', alt: "CrossFit Rocky", class: "img-responsive logo img-rounded"
         #navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li= link_to 'WOD', '#wod'
@@ -39,10 +60,10 @@
             %li= link_to 'Schedule', '#schedule'
             %li= link_to 'Pricing', '#pricing'
             %li= link_to 'FAQ', '#faq'
-            %li= link_to 'Location', '#location'
-            %li= link_to 'Contact', '#contact'
+            %li.hidden-xs= link_to 'Location', '#location'
+            %li.hidden-xs= link_to 'Contact', '#contact'
             = render partial: "application/account_dropdown"
-
+        
     = yield
 
 
