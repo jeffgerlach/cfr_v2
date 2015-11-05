@@ -75,7 +75,7 @@
     :javascript
         $(function() { 
           window.scrollReveal = new scrollReveal();
-          $(".navbar-inverse ul li a[href^='#']").on('click', function(e) {
+          $(".navbar-inverse ul li a[href^='#'], .reduce").on('click', function(e) {
             e.preventDefault();
 
             // store hash
@@ -91,6 +91,7 @@
             });
           });
         });
+
         // Collapses navbar when a link is clicked
         $(document).on('click','.navbar-collapse.in',function(e) {
 
@@ -98,4 +99,10 @@
                 $(this).collapse('hide');
             }
 
+        });
+
+        $('.reduce').click(function(e) {
+            var id = $(this).closest("div.panel-collapse.collapse");
+            console.log(id);
+            $(id).collapse('hide');      
         });

@@ -522,6 +522,7 @@ DEPENDENCIES
   jazz_hands!
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-ui-rails
   launchy
   meta-tags
   modernizr-rails
