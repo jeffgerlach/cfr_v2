@@ -1,7 +1,8 @@
 %li.dropdown
   %a.dropdown-toggle{ "href" => "#", "data-toggle"=>"dropdown", "role" => "button", "aria-expanded"=>"false", "aria-haspopup"=>"true"}
-    Account <span class="caret"></span>
-  %ul.dropdown-menu
+    Account 
+    %span.caret
+  %ul.dropdown-menu.my-dropdown-nav
     - if user_signed_in?
       %li= link_to 'Profile', edit_user_registration_path
       %li= link_to 'Sign Out', destroy_user_session_path, :method=>:delete

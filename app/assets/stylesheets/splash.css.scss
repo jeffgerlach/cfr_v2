@@ -2,7 +2,7 @@
 // Variables, customize bootstrap here
 //-----------------------------------------
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 $red: #CD6363;
 $cfr-green: #62EA30;
@@ -291,7 +291,7 @@ $dropDown       : true;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 .panel-pricing .panel-heading {
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 .panel-pricing .panel-heading .fa {
   margin-top: 10px;
@@ -343,4 +343,61 @@ $dropDown       : true;
   @media (min-width: 375px) {
     margin-left: -40px;
   }
+}
+
+//.faqHeader {
+ //   font-size: 27px;
+ //   margin: 20px;
+//}
+
+#faq .panel-heading .accordion-toggle h4:after {
+  /* symbol for "opening" panels */
+  font-family: FontAwesome;
+  content: "\f0d8";
+  float: right;
+  //color: #F58723;
+  font-size: 18px;
+  line-height: 22px;
+  overflow: no-display;
+}
+
+#faq .panel-heading .accordion-toggle.collapsed h4:after {
+  /* symbol for "collapsed" panels */
+  font-family: FontAwesome;
+  content: "\f0d7";
+  //color: #454444;
+}
+
+//#faq a.accordion-toggle{
+//    text-decoration: none;
+//}
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#faq {
+  #{$a-tags} {
+    color: black;
+    text-decoration: none;
+  } 
+  #{$a-tags-hover} {
+    color: black;
+    text-decoration: none; //underline;
+  } 
+  .faq-button {
+    margin-top: 10px;
+  }
+}
+
+.my-dropdown-nav {
+  ul li {
+    font-size: 13px;
+    margin-top: 0px;
+  }
+}
+
+.navbar-collapse { max-height: 100% !important; }
+
+.coach-bio {
+  padding: 20px;
 }

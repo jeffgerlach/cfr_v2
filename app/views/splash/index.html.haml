@@ -105,26 +105,26 @@
     .row.text-center
       .col-sm-offset-3.col-sm-8
         .row
-          .col-md-6.text-left.clearfix
+          .col-md-6.text-left.clearfix.coach-bio
             =image_tag "john_overhead_avatar.png", class: "avatar pull-left"
             %h4 John Giron
             %p Gym owner
             %p CrossFit Level I Trainer (CF-L1)
-          .col-md-6.text-left.clearfix
+          .col-md-6.text-left.clearfix.coach-bio
             =image_tag "christina_kb_avatar.png", class: "avatar pull-left"
             %h4 Christina Giron
             %p Gym owner
             %p CrossFit Level I Trainer (CF-L1)
-          .col-md-6.text-left.clearfix
+          .col-md-6.text-left.clearfix.coach-bio
             =image_tag "meagan_ohs_avatar.png", class: "avatar pull-left"
             %h4 Meagan Crews
             %p CrossFit Level I Trainer (CF-L1)
-          .col-md-6.text-left.clearfix
+          .col-md-6.text-left.clearfix.coach-bio
             =image_tag "gerald_avatar.jpg", class: "avatar pull-left"
             %h4 Gerald Braden
             %p CrossFit Level I Trainer (CF-L1)
         .row
-          .col-md-6.text-left.clearfix
+          .col-md-6.text-left.clearfix.coach-bio
             =image_tag "jeff_fs_avatar.png", class: "avatar pull-left"
             %h4 Jeff Gerlach
             %p CrossFit Level I Trainer (CF-L1)
@@ -253,7 +253,7 @@
             %li.list-group-item
               %i.fa.fa-check Military/Law/Fire/Student 10% Discount Available
             %li.list-group-item
-              %i.fa.fa-check Auto-Pay Required, Year-Long Commitment Required
+              %i.fa.fa-check Auto-Pay Required, Year-Long Commitment
           .panel-footer
             %a.btn.btn-lg.btn-block.btn-success{:href=>"#pricing"} SIGN UP!
     .row.text-center
@@ -266,6 +266,8 @@
             %p
               %strong $15
           %ul.list-group.text-center
+            %li.list-group-item
+              %i.fa.fa-check Pay At The Door
             %li.list-group-item
               %i.fa.fa-check Cash or Check
       .col-md-4.text-center
@@ -310,7 +312,155 @@
       .col-sm-offset-1.col-sm-10
         %hr
 
-%section#location
+%section#faq
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        .row
+          %h2 Frequently Asked Questions
+          #accordion.panel-group
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseOne'} 
+                  %h4.panel-title Am I "fit" enough to CrossFit?
+              #collapseOne.panel-collapse.collapse
+                .panel-body.text-left
+                  YES! The needs of Olympic athletes and our grandparents differ by degree not kind. The CrossFit program is designed for universal scalability making it the perfect application for any committed individual regardless of experience. We’ve used our same routines for elderly individuals with heart disease to Firefighters, Military, Law enforcement, elite athletes, and everyone in between! We scale load and intensity; we don’t change programs.
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseTwo'} 
+                  %h4.panel-title Will CrossFit make me "bulky"?
+              #collapseTwo.panel-collapse.collapse
+                .panel-body.text-center
+                  %p NO! For our female athletes, please check out this awesome article from CFFMS about CrossFit and bulkiness. 
+                  %p= link_to 'ARTICLE', "https://crossfitfms.wordpress.com/2012/07/20/the-fear-of-bulkiness-and-crossfit", :target => "_blank", class: "btn btn-success btn-sm faq-button"
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseThree'} 
+                  %h4.panel-title Can I try it out before joining?
+              #collapseThree.panel-collapse.collapse
+                .panel-body.text-left
+                  YES! CrossFit Rocky offers a free, 3-day (consecutive business days) trial to experience what the workouts are all about! This will allow each individual a firsthand knowledge about what is meant by “Constantly Varied, Functional Movements, and High Intensity". Strength and conditioning coaches will assist you during this trial period.
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseFour'} 
+                  %h4.panel-title How do I get started?
+              #collapseFour.panel-collapse.collapse
+                .panel-body.text-left
+                  %p EASY! Just call (805) 748-8480 or connect with us to make an appointment and receive your free trial. Be sure to have your completed waiver when you arrive for your free trial.
+                  %p.text-center= link_to 'CONTACT US', "#contact", class: "btn btn-success btn-sm"
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseFive'} 
+                  %h4.panel-title Where can I find printable documents?
+              #collapseFive.panel-collapse.collapse
+                .panel-body.text-center
+                  %p= link_to 'CFR WAIVER', "http://nebula.wsimg.com/a56b2272c3996b42b88b5cd2d638670a?AccessKeyId=A62126C89ED833A5A9DB&disposition=0&alloworigin=1", :target => "_blank", class: "btn btn-success btn-sm faq-button"
+                  %p= link_to 'CFR MEMBERSHIP AGREEMENT', "http://nebula.wsimg.com/71e1dc02193d3543274e13d903502232?AccessKeyId=A62126C89ED833A5A9DB&disposition=0&alloworigin=1", :target => "_blank", class: "btn btn-success btn-sm faq-button"
+                  %p= link_to 'CFR CONTRACT', "http://nebula.wsimg.com/dd5060b898584fa819a9afa04ea61371?AccessKeyId=A62126C89ED833A5A9DB&disposition=0&alloworigin=1", :target => "_blank", class: "btn btn-success btn-sm faq-button"
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseSix'} 
+                  %h4.panel-title Where can I make a payment?
+              #collapseSix.panel-collapse.collapse
+                .panel-body.text-center
+                  %p= link_to 'HERE', '#pricing', class: "btn btn-success btn-sm faq-button"
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseSeven'} 
+                  %h4.panel-title What do I experience in a session of CrossFit?
+              #collapseSeven.panel-collapse.collapse
+                .panel-body.text-left
+                  Scheduled CrossFit classes will be offered daily Monday thru Friday for all members. Each session will have a warm up and preparation. Coaches will teach and explain movements for that day. You will take part in the WOD as a group. After workout coaches will lead a cool down. Strength and conditioning coaches will be available to answer questions and give guidance to help you reach your specific goals. Membership includes all access pass to personal trainers and CrossFit workouts during scheduled workout times, plus open floor training seminars on efficiency and efficacy of movements.
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseEight'} 
+                  %h4.panel-title Do you offer 1 on 1 personal training?
+              #collapseEight.panel-collapse.collapse
+                .panel-body.text-center
+                  YES! Contact us and we can discuss the details.
+            .panel.panel-default
+              .panel-heading
+                %a.accordion-toggle.collapsed{'data-toggle'=>"collapse", 'data-parent'=>'#accordion', 'href'=>'#collapseNine'} 
+                  %h4.panel-title What do those acronyms mean?
+              #collapseNine.panel-collapse.collapse
+                .panel-body.text-center
+                  .col-xs-6.text-center
+                    %b 
+                      %u WOD: 
+                    %p Workout Of the Day
+                    %b 
+                      %u CFSB: 
+                    %p CrossFit Strength Bias
+                    %b 
+                      %u AMRAP: 
+                    %p As Many Reps/Rounds As Possible
+                    %b 
+                      %u EMOM: 
+                    %p Every Minute On The Minute
+                    %b 
+                      %u EOM: 
+                    %p Every Odd Minute
+                    %b 
+                      %u EEM: 
+                    %p Every Even Minute
+                    %b 
+                      %u MetCon: 
+                    %p Metabolic Conditioning Workout
+                    %b 
+                      %u Rx: 
+                    %p As Prescribed / As Written/Without Modifications
+                    %b 
+                      %u SDHP: 
+                    %p Sumo Deadlift High Pull
+                    %b 
+                      %u OHS: 
+                    %p Overhead Squat
+                    %b 
+                      %u TGU: 
+                    %p Turkish Get Up
+                  .col-xs-6.text-center
+                    %b 
+                      %u MU: 
+                    %p Muscle Up (gymnastics)
+                    %b 
+                      %u HSPU: 
+                    %p Handstand Push Up
+                    %b 
+                      %u ME: 
+                    %p Max Effort
+                    %b 
+                      %u TTB: 
+                    %p Toes To Bar
+                    %b 
+                      %u PR: 
+                    %p Personal Record
+                    %b 
+                      %u KB: 
+                    %p Kettlebell
+                    %b 
+                      %u C2B: 
+                    %p Chest To Bar
+                    %b 
+                      %u BJO's: 
+                    %p Box Jump Overs
+                    %b 
+                      %u DH: 
+                    %p Dead Hang
+                    %b 
+                      %u BB: 
+                    %p Barbell
+                    %b 
+                      %u CFR: 
+                    %p CrossFit Rocky!
+
+%section.divider
+  .container
+    .row.text-center
+      .col-sm-offset-1.col-sm-10
+        %hr
+
+%section#location.hidden-xs
   .container.text-center
     %h2 LOCATION
     .row 
@@ -318,7 +468,7 @@
         .Flexible-container
           %iframe{:width => "425", :height=>"350", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH5woqv82E4cRZ7Rwh4-vP3c&key=AIzaSyAr-nhsQUVlriaJNEBFa7Jt3VA_3WYpk44"}
 
-%section.divider
+%section.divider.hidden-xs
   .container
     .row.text-center
       .col-sm-offset-1.col-sm-10
